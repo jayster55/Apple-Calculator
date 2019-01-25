@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints />
+          <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn_leftbrace" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="(" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font></Button>
+            <Button fx:id="btn_rightbrace" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text=")" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="82.0" prefWidth="61.0" text="AC" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button fx:id="btn_clear" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="AC" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_plusminusinvert" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="+/-" textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_percent" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="\%" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_2nd" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="2nd" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_squared" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="x^2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cubed" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="x^3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_power" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="x^y" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_epower" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="e^x" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_tenpower" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="10^x" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_seven" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="7" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_eight" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="8" textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_nine" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="89.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="9" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_multiplication" mnemonicParsing="false" onAction="#buttonPress" prefHeight="192.0" prefWidth="60.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #FF9F0B#FF9F0B;" stylesheets="@css/style.css" text="x" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Serif Regular" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_onedivx" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="1/x" textFill="WHITE" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_squareroot" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="2√x" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cubedroot" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="3√x" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_ysquareroot" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="y√x" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_ln" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="ln" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logten" mnemonicParsing="false" onAction="#buttonPress" prefHeight="67.0" prefWidth="99.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="log10" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_four" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="4" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_five" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="5" textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_six" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="6" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_subtraction" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #FF9F0B#FF9F0B;" stylesheets="@css/style.css" text="-" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_factorial" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="x!" textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_sin" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="sin" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cos" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="cos" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_tan" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="tan" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font name="STIXVariants-Regular" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_e" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="e" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_one" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="1" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_two" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="2" textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_three" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="3" textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_addition" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #FF9F0B#FF9F0B;" stylesheets="@css/style.css" text="+" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_rad_deg_switcher" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="Rad" textFill="WHITE" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_sinh" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="sinh" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cosh" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="cosh" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_tanh" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="tanh" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_pi" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="π" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_rand" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-background-color: #47474B#47474B; -fx-font-family: Lucida Grande; -fx-font-size: 15;" stylesheets="@css/style.css" text="Rand" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_zero" mnemonicParsing="false" onAction="#buttonPress" prefHeight="66.0" prefWidth="166.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="0" textFill="WHITE" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="49.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_decimal" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #5E6266#5E6266;" stylesheets="@css/style.css" text="." textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_equals" mnemonicParsing="false" onAction="#buttonPress" prefHeight="82.0" prefWidth="61.0" style="-fx-font-family: Lucida GrandeLucida Grande; -fx-font-size: 20; -fx-background-color: #FF9F0B#FF9F0B;" stylesheets="@css/style.css" text="=" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Font" size="30.0" />
+               </font>
+            </Button>
+            <TextField fx:id="text_value" alignment="CENTER_RIGHT" prefHeight="144.0" prefWidth="600.0" style="-fx-background-color: #343438#343438; -fx-font-size: 25; -fx-font-family: SF Pro TextSF Pro Text; -fx-text-fill: White;" text="0" GridPane.columnSpan="10" GridPane.rowIndex="3">
+               <font>
+                  <Font name="SF Pro Text Heavy Italic" size="23.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btn_division" mnemonicParsing="false" onAction="#buttonPress" prefHeight="85.0" prefWidth="60.0" style="-fx-font-family: Lucida Grande; -fx-font-size: 20; -fx-background-color: #FF9F0B#FF9F0B #FF9F0B#FF9F0B;" stylesheets="@css/style.css" text="÷" textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Font" size="45.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

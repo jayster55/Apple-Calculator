@@ -1,2 +1,2 @@
 # Apple-Calculator
-Remade the macOSX Apple Calculator with Scala and JavaFX
+Remade the macOSX Apple Calculator with JavaFX and Scala
